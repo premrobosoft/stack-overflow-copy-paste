@@ -4,7 +4,6 @@
   "version": "0.0.0-semantically-released",
   "main": "dist/index.js",
   "scripts": {
-    "commit": "git-cz",
     "prebuild": "rimraf dist",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "build": "babel src/ -d dist/",
@@ -55,8 +54,6 @@
   },
   "config": {
     "ghooks": {
-      "commit-msg": "validate-commit-msg",
-      "pre-commit": "npm run validate"
     },
     "commitizen": {
       "path": "cz-conventional-changelog"
